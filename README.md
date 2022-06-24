@@ -1,18 +1,18 @@
 # AdvancedSynthesisandSTCwithDC
 
 
-# RTL Design and Synthesis in Verilog using Sky130 Technology <!-- omit in toc -->
-<img width="900" alt="VSD_Workshop_Detail" src="https://user-images.githubusercontent.com/93824690/166194735-0f0b80b3-6f14-4d76-8929-c3052b3aa3df.png">
+
 
 
 
 ## Table of Contents
 - [Introduction](#-introduction)
-- [1. Day 1 - Introduction to Verilog RTL design and Synthesis](#1-day-1---introduction-to-verilog-rtl-design-and-synthesis)
-  - [1.1. Introduction to open source simulator iverilog](#11-introduction-to-open-source-simulator-iverilog)
-  - [1.2. Labs using iverilog and gtkwave](#12-labs-using-iverilog-and-gtkwave)
-  - [1.3. Introduction to Yosys and Logic Synthesis](#13-introduction-to-Yosys-and-Logic-Synthesis)
-  - [1.4. Labs using Yosys and Sky130 PDKs](#14-labs-using-Yosys-and-Sky130-PDKs)
+- [1. Day 1 - Introduction to Logic Synthesis](#1-day-1---introduction-to-logic-synthesis)
+  - [1.1. Introduction to DC](#11-introduction-to-DC)
+  - [1.2. Invoking dc Basic setup](#12-labs-using-Invoking-dc-Basic-setup)
+  - [1.3. Intro to ddc gui with Design vision](#13-Intro-to-ddc-gui-with-design_vision)
+  - [1.4. Labs using DC Synopsys DC Setup](#14-dc-synopsys-dc-setup)
+  -[1.5 TCL Scripting](#15-tcl-scripting)
  - [2. Day 2 - Timing libs, hierarchical vs flat synthesis and efficient flop coding styles](#2-day-2---timing-libs-hierarchical-vs-flat-synthesis-and-efficient-flop-coding-styles)
   - [2.1. Introduction to Timing .libs](#21-introduction-to-timing-.libs)
   - [2.2. Hierarchial synthesis vs Flat synthesis](#22-hierarchial-synthesis-vs-flat-synthesis)
@@ -33,72 +33,75 @@
   - [5.5. Labs on "for loop" and "for generate"](#55-labs-on-"for-loop"-and-"for-generate")
   - 
 # Introduction
-The report is based on 5-day RTL Design and Synthesis in Verilog using the SKY130 Technolog workshop facilitated by VSD on using open source tools involving **iVerilog, GTKWave, Yosys** with **Sky130 technology**.  
-This workshop introduces to the digital logic design using Verilog HDL. Validating the functionality of the design using Functional Simulation. Writing Test Benches to validate the functionality of the RTL design .Logic synthesis of the Functional RTL Code. Gate Level Simulation of the Synthesized Netlist.
+Design Compiler is an Advanced Synthesis Tool used by leading semiconductor companies across world.
 
-**SKY130** is the hardware industry's first open-source process design kit (PDK) released by SkyWater Technology Foundry in collaboration with Google giving all hardware design experts and aficionados, a worldwide access to their IP functions and open source ASICs. 
+Synthesis of logic circuits plays a crucial role in optimizing the logic and achieving the targeted performance, area and power goals of an IC.
 
+Understanding the fundamentals of design are very important to give the correct inputs to the tool to achieve the best-in-class netlist quality.
+
+This workshop explores the following aspects,
+
+- Design fundamentals
+- Setting up DC for synthesis
+- Understanding STA
+- Understanding and writing the Synopsys Design Constraints [SDC].
+- Analyzing the quality of netlist synthesized.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## 1. Day 1 - Introduction to Verilog RTL design and Synthesis
-### 1.1. Introduction to open source simulator iverilog
-In the digital circuit design, **register-transfer level (RTL)** is a design abstraction which models a synchronous digital circuit in terms of the data flow between hardware register, and the logical operations performed on those signals. RTL abstraction is used in HDL to create high-level representations of a circuit, from which lower-level representations and ultimately actual wiring can be derived.  
+## 1. Day 1 - Introduction to Logic Synthesis
+### 1.1. Introduction to DC
+Design Compiler RTL synthesis solution enables users to meet today's design challenges with concurrent optimization of timing, area, power and test. Design Compiler includes innovative topographical technology that enables a predictable flow resulting in faster time to results.  
+**Benefits**:
 
-**Simulator**: It is a tool which is used for checking the design. In this workshop we are using **iverilog** tool.**Simulation** is the process of creating models that mimic the behavior of the device you are designing (simulation models) and creating models to exercise the device (test benches).
-**RTL Design**: It consists of an actual verilog code / a set of verilog codes that have the functionality to meet the required design specifications of the circuit.
+- Concurrent optimization of timing, area, power and test
+- Results correlate within 10% of physical implementation
+- Removes timing bottlenecks by creating fast critical paths
+- Gate-to-gate optimization for smaller area on new or legacy designs while maintaining timing Quality of Results (QoR)
+- Cross-probing between RTL, schematic, and timing reports for fast debug
+- Offers more flexibility for users to control optimization on specific areas of designs
+- Enables higher efficiency with integrated static timing analysis, test synthesis and power  synthesis
+- Support for multi voltage and multi supply
+- 2X faster runtime on quad-core compute servers
 
-**Test Bench**: It is the setup to apply stimulus(test vectors) to design to checks its functionality.
-
-#### HOW SIMULATOR WORKS 
-**Simulator** looks for changes on input signals and based on that output is evaluated.
-
-<img width="500" alt="test bench" src="https://user-images.githubusercontent.com/93824690/166195956-3208f1c5-a7f8-405a-bdf7-08c2ae92ac4b.png">
+**SDC**
+The Synopsys Design Constraints (SDC) format is used to specify the design intent, including timing, power and area constraints for a design. This format is used by different EDA tools to synthesize and analyse a design.SDC file syntax is based on TCL format and all commands of sdc file follow the TCL syntax. 
+**DC Setup**
+![image](https://user-images.githubusercontent.com/55539862/175645409-80bbf9f1-0048-4591-b8ca-0ca366e2aa69.png)
 
 
-**Design** may have 1 or more primary inputs and primary outputs but **TB** doesn't have.)
-
- #### SIMULATION FLOW
-<img width="500" alt="iverilog based" src="https://user-images.githubusercontent.com/93824690/166142840-4d8a8377-526c-444e-9498-dc76068046fc.png">
-
-**Simulator** continuously checks for changes in the input. If there is an input change, the output is evaluated; else the simulator will never evaluate the output.
-
-### 1.2. Labs using iverilog & gtkwave
+### 1.2. Labs using Design Compiler
  
 #### ENVIRONMENT SETUP
 
 ```
 //create a directory
-$ mkdir VLSI 
-//Git Clone vsdflow. 
-$ git clone https://github.com/kunalg123/vsdflow.git
+$ mkdir DC_WORKSHOP 
 //Git Clone sky130RTLDesignAndSynthesisWorkshop. 
 $ git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
 ```
-<img width="641" alt="Screenshot (130)" src="https://user-images.githubusercontent.com/93824690/166142874-66d2c8f4-0fc5-4a82-91ae-b3821f08f56e.png"> 
+![image](https://user-images.githubusercontent.com/55539862/175645982-dfc2be32-01f3-4836-8c75-f9d4ae32a2f5.png)
  
 **sky130RTLDesignAndSynthesisWorkshop** Directory has: My_Lib - which contains all the necessary library files; where lib has the standard cell libraries to be used in synthesis and verilog_model with all standard cell verilog models for the standard cells present in the lib. Ther verilog_files folder contains all the experiments for lab sessions including both verilog code and test bench codes.
 
-_We are given a default set of files and libraries shown below to work on using the practical lab instance._
 
-<img width="641" alt="Screenshot (134)" src="https://user-images.githubusercontent.com/93824690/166143655-b00175e1-864b-4aac-8c3c-a4f72e388351.png">
-
-### Simulation using iverilog simulator - 2:1 multiplexer rtl design
-
-#### VERILOG FILE OF A SIMPLE 2:1 MUX
-
-<img width="641" alt="Screenshot (135)" src="https://user-images.githubusercontent.com/93824690/166143401-cb52b623-5095-45f4-b880-59b88e4c4bca.png">
+## Invoking dc Basic setup
 
 
-#### GTKWAVE Analysis
+![image](https://user-images.githubusercontent.com/55539862/175649128-efb97bae-bb6e-4269-a2f7-20fab63d511c.png)
 
-<img src="https://user-images.githubusercontent.com/93824690/166143969-6e8fb91c-fc09-4a8b-b779-5b45b834888c.png" width="750">
+
+![image](https://user-images.githubusercontent.com/55539862/175650960-523b2ba9-51da-4d0d-b9a3-0c143f677a9d.png)
+
+![image](https://user-images.githubusercontent.com/55539862/175654780-5051236c-ccab-442b-a79d-bdbd13b0f096.png)
 
 
 #### Access Module Files
 ```
-$ gvim tb_good_mux.v -o good_mux.v 
+$ gedit /home/irene/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/lab1_flop_with_en.v
 ```
 
-<img width="400" alt="Screen Shot 2021-09-02 at 12 23 28 AM" src="https://user-images.githubusercontent.com/89927660/131786618-c6d4663f-5375-48dc-aa16-46b70e6797da.png">
+![image](https://user-images.githubusercontent.com/55539862/175655761-819d376a-e843-4c96-bd37-bbe664f6a7e2.png)
+![image](https://user-images.githubusercontent.com/55539862/175656311-fad775f2-0c2f-40e7-9a45-6b64b583dd5b.png)
+
 
 ### 1.3. Introduction to Yosys & Logic Synthesis
 
