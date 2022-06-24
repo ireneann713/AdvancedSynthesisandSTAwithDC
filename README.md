@@ -50,6 +50,7 @@ This workshop explores the following aspects,
 ## 1. Day 1 - Introduction to Logic Synthesis
 ### 1.1. Introduction to DC
 Design Compiler RTL synthesis solution enables users to meet today's design challenges with concurrent optimization of timing, area, power and test. Design Compiler includes innovative topographical technology that enables a predictable flow resulting in faster time to results.  
+
 **Benefits**:
 
 - Concurrent optimization of timing, area, power and test
