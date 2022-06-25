@@ -9,10 +9,10 @@
 - [Introduction](#-introduction)
 - [1. Day 1 - Introduction to Logic Synthesis](#1-day-1---introduction-to-logic-synthesis)
   - [1.1. Introduction to DC](#11-introduction-to-DC)
-  - [1.2. Invoking dc Basic setup](#12-labs-using-Invoking-dc-Basic-setup)
-  - [1.3. Intro to ddc gui with Design vision](#13-Intro-to-ddc-gui-with-design_vision)
+  - [1.2. Invoking dc Basic setup](#12-Invoking-dc-Basic-setup)
+  - [1.3. Introduction to ddc gui with Design vision](#13-Introdution-to-ddc-gui-with-design_vision)
   - [1.4. Labs using DC Synopsys DC Setup](#14-dc-synopsys-dc-setup)
-  -[1.5 TCL Scripting](#15-tcl-scripting)
+  - [1.5 TCL Scripting](#15-tcl-scripting)
  - [2. Day 2 - Timing libs, hierarchical vs flat synthesis and efficient flop coding styles](#2-day-2---timing-libs-hierarchical-vs-flat-synthesis-and-efficient-flop-coding-styles)
   - [2.1. Introduction to Timing .libs](#21-introduction-to-timing-.libs)
   - [2.2. Hierarchial synthesis vs Flat synthesis](#22-hierarchial-synthesis-vs-flat-synthesis)
@@ -104,12 +104,13 @@ $ gedit /home/irene/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_file
 ![image](https://user-images.githubusercontent.com/55539862/175656311-fad775f2-0c2f-40e7-9a45-6b64b583dd5b.png)
 
 
-### 1.3. Introduction to Yosys & Logic Synthesis
+### 1.3. Introduction to ddc gui with Design vision
 
 **Synthesizer** is a tool for converting the **RTL** to Netlist and here we are using the **Yosys** Synthesizer.
 #### Yosys SETUP
 <img width="500" alt="Yosys" src="https://user-images.githubusercontent.com/93824690/166144581-f9888922-5b97-467b-bac8-42138d4c8a7e.png">
 
+![image](https://user-images.githubusercontent.com/55539862/175759734-64338b9b-097d-4c2a-9848-ce91dee15840.png)
 
 
 <img width="500" alt="verify the synthesis" src="https://user-images.githubusercontent.com/93824690/166144585-f308505e-2f1a-468f-aff4-673800445259.png">
