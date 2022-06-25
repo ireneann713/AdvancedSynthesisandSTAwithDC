@@ -127,22 +127,16 @@ Inorder to charge/discharge the capacitance faster, we use wider transistors tha
 A Constraint is a guidance file given to a synthesizer inorder to enable an optimum implementation of the logic circuit by selecting the appropriate flavour of cells (fast or slow).
 
 ### 1.4. Labs using DC Synopsys DC Setup
+![image](https://user-images.githubusercontent.com/55539862/175760281-4092c6f6-814e-4d7f-a0a5-323c926384bf.png)
+![image](https://user-images.githubusercontent.com/55539862/175760776-17ddb649-2aa8-4944-882b-75ee9e61b796.png)
 
-#### Steps for Design Synthesis
 
-<img width="500" alt="Screen Shot 2021-09-02 at 12 16 52 AM" src="https://user-images.githubusercontent.com/89927660/131785975-bbc0c874-8b81-4f29-b892-3b279c7dbc6c.png">
+### 1.5 TCL Scripting
 
-#### Inference from Synthesis and Execution of netlist generation
+![image](https://user-images.githubusercontent.com/55539862/175760634-2fb0b3b5-143b-4408-a809-c788e58fc742.png)
+![image](https://user-images.githubusercontent.com/55539862/175761470-88a4e96b-9e3a-4a65-aebe-477a072d0a64.png)
 
-<img width="641" alt="Screenshot (151)" src="https://user-images.githubusercontent.com/93824690/166145643-8430fe11-9020-44dc-b649-194343b4f955.png">
-
-#### Synthesis by using show command
-
-<img width="500" alt="Screenshot (153)" src="https://user-images.githubusercontent.com/93824690/166145665-dfcf9e19-d920-4819-bdcd-793b6209da5c.png">
-
-#### Writing Netlist
-
-<img width="641" alt="Screenshot (157)" src="https://user-images.githubusercontent.com/93824690/166146410-42e93e44-0fba-4540-a819-95afff4e1b8b.png">
+![image](https://user-images.githubusercontent.com/55539862/175761429-e891e889-7514-4b83-88e6-aadb3bf7025a.png)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
