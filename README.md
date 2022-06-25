@@ -15,7 +15,7 @@
   - [1.5 TCL Scripting](#15-tcl-scripting)
  - [2. Day 2 -  Basics to STA](#2-day-2---Introduction-to-sta)
   - [2.1. Introduction to STA](#21-introduction-to-STA)
-  - [2.2. Hierarchial synthesis vs Flat synthesis](#22-hierarchial-synthesis-vs-flat-synthesis)
+  - [2.2. Timing dot Libs](#22-timing-dot-libs)
   - [2.3. Various Flop Coding Styles and optimization](#23-various-flop-coding-styles-and-optimization)
 - [3. Day 3 - Combinational and Sequential Optimizations](#3-day-3---combinational-and-sequential-optimizations)
   - [3.1. Introduction to Optimizations](#31-introduction-to-optimizations)
@@ -145,30 +145,13 @@ A Constraint is a guidance file given to a synthesizer inorder to enable an opti
 Static timing analysis (STA) is a method of validating the timing performance of a design by checking all possible paths for timing violations. STA breaks a design down into timing paths, calculates the signal propagation delay along each path, and checks for violations of timing constraints inside the design and at the input/output interface.
 ![image](https://user-images.githubusercontent.com/55539862/175761772-7a7ab402-6495-4f4d-959e-f009dbdca220.png)
 
-```
-__Command to open the libary file
-$ gvim ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-__To shut off the background colors/ syntax off:
-: syn off
-__To enable the line numbers
-: se nu
-```
-#### Library file
-
-<img width="641" alt="Screenshot (150)" src="https://user-images.githubusercontent.com/93824690/166147361-8f538de7-24d2-410e-81c2-832710298c5a.png">
-
-#### Contents
-
-For a design to work, there are three important parameters that determines how the Silicon works: Process (Variations due to Fabrications), Voltage (Changes in the behavior of the circuit) and Temperature (Sensitivity of semiconductors). Libraries are characterized to model these variations. 
-
-<img width="300" alt="Screenshot (162)" src="https://user-images.githubusercontent.com/93824690/166147849-14fa3eaf-0ca9-440c-bbe8-7b52f6cd682e.png">
-
-#### Various Flavours of AND Cell
-
-<img width="750" alt="Screenshot (163)" src="https://user-images.githubusercontent.com/93824690/166147855-692033f0-08e1-465f-98b6-5a9fba6a3eb0.png">
 
 
-### 2.2. Hierarchial synthesis vs Flat synthesis 
+
+
+
+### 2.2. Timing dot Libs
+![image](https://user-images.githubusercontent.com/55539862/175762586-57be47d9-c7de-4ed0-8a22-03281a84769d.png)
 
 #### Hierarchial synthesis  
 ````
