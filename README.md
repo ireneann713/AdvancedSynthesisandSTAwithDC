@@ -140,8 +140,8 @@ A Constraint is a guidance file given to a synthesizer inorder to enable an opti
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
-## 2. Day 2 - Timing Libs, Hierarchial Vs Flat Synthesis and Efficient Flop Coding Styles
-### 2.1. Introduction to timing labs
+## 2. Day 2 - Basics of STA
+### 2.1. Introduction to STA
 ```
 __Command to open the libary file
 $ gvim ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
