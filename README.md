@@ -8,13 +8,13 @@
 ## Table of Contents
 - [Introduction](#-introduction)
 - [1. Day 1 - Introduction to Logic Synthesis](#1-day-1---introduction-to-logic-synthesis)
-  - [1.1. Introduction to DC](#11-introduction-to-DC)
+  - [1.1. Introduction to DC](#11-introduction-to-dc)
   - [1.2. Invoking dc Basic setup](#invoking-dc-basic-setup)
-  - [1.3. Introduction to ddc gui with Design vision](#13-Introdution-to-ddc-gui-with-design_vision)
-  - [1.4. Labs using DC Synopsys DC Setup](#14-dc-synopsys-dc-setup)
+  - [1.3. Introduction to ddc gui with Design vision](#13-introduction-to-ddc-gui-with-design-vision)
+  - [1.4. Labs using DC Synopsys DC Setup](#14-labs-using-dc-synopsys-dc-setup)
   - [1.5 TCL Scripting](#15-tcl-scripting)
  - [2. Day 2 -  Basics to STA](#2-day-2---Introduction-to-sta)
-   - [2.1. Introduction to STA](#21-introduction-to-STA)
+   - [2.1. Introduction to STA](#21-introduction-to-sta)
    - [2.2. Timing dot Libs](#22-timing-dot-libs)
    - [2.3. Exploring dotLib](#23-various-flop-coding-styles-and-optimization)
 - [3. Day 3 - Combinational and Sequential Optimizations](#3-day-3---combinational-and-sequential-optimizations)
@@ -153,77 +153,8 @@ Static timing analysis (STA) is a method of validating the timing performance of
 ### 2.2. Timing dot Libs
 ![image](https://user-images.githubusercontent.com/55539862/175762586-57be47d9-c7de-4ed0-8a22-03281a84769d.png)
 
-#### Hierarchial synthesis  
-````
-_Opening the file used for this experiment
-$ gvim multiple_modules.v
-_Invoke Yosys
-$ yosys
-_Read library 
-$ read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-_Read Design
-$ read_verilog multiple_modules.v
-_Synthesize Design
-$ synth -top multiple_modules
-_Generate Netlist
-$ abc -liberty ../my_lib/lib/sky130_fd_sc_hd__t_025C_1v80.lib
-_Realizing Graphical Version of Logic for multiple modules
-$ show multiple_modules
-_Writing the netlist in a crisp manner 
-$ write_verilog -noattr multiple_modules_hier.v
-$ !gvim multiple_modules_hier.v
-````
-**Multiple Modules:** - 2 SubModules
-**Staistics of Multiple Modules**
-
-<img width="641" alt="Screenshot (165)" src="https://user-images.githubusercontent.com/93824690/166205646-1597fd0a-12e7-4244-b0a7-875b36e8366b.png">
-
-**Realization of the Logic**
-
-<img width="500" alt="Screen Shot 2021-09-02 at 5 12 46 PM" src="https://user-images.githubusercontent.com/89927660/131923051-5d882430-fa4a-4b0d-8b70-0857c58f9b34.png">
-
-**Netlist file**
-
-<img width="641" alt="Screenshot (168)" src="https://user-images.githubusercontent.com/93824690/166205875-e11616c0-01c5-4aee-a5a8-061646e8bbb7.png">
-
-#### Flat synthesis  
-
-```
-_To flatten the netlist
-$ flatten
-_Writing the netlist in a crisp manner and to view it
-$ write_verilog -noattr multiple_modules_flat.v
-$ !gvim multiple_modules_flat.v
-```
-**Realization of the Logic**
-
-<img width="750" alt="Screen Shot 2021-09-02 at 6 14 16 PM" src="https://user-images.githubusercontent.com/89927660/131927662-d25c4d37-c0c1-41a7-ab14-9399840eb3ee.png">
-  
- 
-**Netlist file**
-
-<img width="641" alt="Screenshot (169)" src="https://user-images.githubusercontent.com/93824690/166206713-c95c9f66-34f0-408d-916c-47081c326872.png">
-
-
-#### SUB MODULE LEVEL SYNTHESIS
-
-Sub-module level synthesis is preferred when there are multiple instances of same module. Sythesizing the same module over several times may not be advantageous with respect to time. Instead, synthsis can be performed for one module, its netlist can be replicated and then stitched together in the top module. This is also used particulary in massive designs using divide and conquer method. 
-
-**Statistics of Sub-module**
-
-<img width="300" alt="Screen Shot 2021-09-02 at 9 11 28 PM" src="https://user-images.githubusercontent.com/89927660/131940332-d8272cc3-affb-471d-9dd0-1ad951d86c22.png">
-
-**Graphical Realization of the Logic**
-
-<img width="500" alt="Screen Shot 2021-09-02 at 9 12 18 PM" src="https://user-images.githubusercontent.com/89927660/131940277-9fc3e2fe-b185-4d91-9b2d-86e54c1d1768.png">
-
-**NetList File of Sub-module**
-
-<img width="300" alt="Screen Shot 2021-09-02 at 9 13 33 PM" src="https://user-images.githubusercontent.com/89927660/131940384-c0bf6a0a-a73c-4c99-95a4-84a7a654e774.png">
-
-
-### 2.3. Various Flop coding styles and optimization
-In a digital design, when an input signal changes state, the output changes after a propogation delay. All logic gates add some delay to singals. These delays cause expected and unwanted transitions in the output, called as _Glitches_ where the output value is momentarily different from the expected value. An increased delay in one path can cause glitch when those signals are combined at the output gate. In short, more combinational circuits lead to more glitchy outputs that will not settle down with the output value. 
+### 2.3. Exploring Exploring dotLib 
+![image](https://user-images.githubusercontent.com/55539862/175762887-a75aad9b-46b1-49c1-ba12-44948eefc10a.png)
 
 #### Flip flop overview
 A D flip-flop is a sequential element that follows the input pin d at the clock's given edge. D flip-flop is a fundamental component in digital logic circuits.
