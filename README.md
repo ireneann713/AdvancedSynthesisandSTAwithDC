@@ -106,21 +106,12 @@ $ gedit /home/irene/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_file
 
 ### 1.3. Introduction to ddc gui with Design vision
 
-**Synthesizer** is a tool for converting the **RTL** to Netlist and here we are using the **Yosys** Synthesizer.
-#### Yosys SETUP
-<img width="500" alt="Yosys" src="https://user-images.githubusercontent.com/93824690/166144581-f9888922-5b97-467b-bac8-42138d4c8a7e.png">
+
 
 ![image](https://user-images.githubusercontent.com/55539862/175759734-64338b9b-097d-4c2a-9848-ce91dee15840.png)
 
 
-<img width="500" alt="verify the synthesis" src="https://user-images.githubusercontent.com/93824690/166144585-f308505e-2f1a-468f-aff4-673800445259.png">
 
-#### Logic Synthesis
-
-RTL Design - behavioral representation in HDL form for the required specification.
-
- **Synthesis** - RTL to Gate level translation.
- The design is converted int gates and connections are made. This given outas a file called **netlist**.
 
 >_.lib file is a collection of logical modules which includes all basic logic gates. It may also contain different flavors of the same gate (2 input AND, 3 input AND – slow, medium and fast version)._
 #### Faster cells and Slower Cells
@@ -135,7 +126,7 @@ Inorder to charge/discharge the capacitance faster, we use wider transistors tha
 
 A Constraint is a guidance file given to a synthesizer inorder to enable an optimum implementation of the logic circuit by selecting the appropriate flavour of cells (fast or slow).
 
-### 1.4. Labs using Yosys and Sky130 PDKs
+### 1.4. Labs using DC Synopsys DC Setup
 
 #### Steps for Design Synthesis
 
