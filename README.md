@@ -19,8 +19,8 @@
    - [2.3. Exploring dotLib](#23-various-flop-coding-styles-and-optimization)
 - [3. Day 3 - Advanced Constraints](#3-day-3---advanced-constraints)
   - [3.1. Clock Tree Modelling - Uncertainty](#31-clock-tree-modelling---uncertainty)
-  - [3.2. Loading design get_cells, get_ports, get_nets](#32-loading-design-get_cells-get_ports-get_nets)
- 
+  - [3.2. Loading Design get_cells, get_ports, get_nets](#32-loading-design-get_cells-get_ports-get_nets)
+  - [3.3. Loading Design get_pins, get_clocks, querying_clocks]()
 # Introduction
 Design Compiler is an Advanced Synthesis Tool used by leading semiconductor companies across world.
 
@@ -171,7 +171,12 @@ It can define for both setup and hold.
 ### 3.2 Loading design get_cells, get_ports, get_nets
 
 ![image](https://user-images.githubusercontent.com/55539862/175768690-3564622e-68d2-46e4-8621-f2ec4d502339.png)
-
+ 
+ ### 3.3  Loading Design get_pins, get_clocks, querying_clocks
+ 
+ #### get_pins
+ 
+ ![image](https://user-images.githubusercontent.com/55539862/175775642-ec759034-54f0-4de9-b68c-1b01fb1b8935.png)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
