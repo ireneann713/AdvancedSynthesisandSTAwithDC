@@ -13,8 +13,8 @@
   - [1.3. Introduction to ddc gui with Design vision](#13-Introdution-to-ddc-gui-with-design_vision)
   - [1.4. Labs using DC Synopsys DC Setup](#14-dc-synopsys-dc-setup)
   - [1.5 TCL Scripting](#15-tcl-scripting)
- - [2. Day 2 - Timing libs, hierarchical vs flat synthesis and efficient flop coding styles](#2-day-2---timing-libs-hierarchical-vs-flat-synthesis-and-efficient-flop-coding-styles)
-  - [2.1. Introduction to Timing .libs](#21-introduction-to-timing-.libs)
+ - [2. Day 2 -  Basics to STA](#2-day-2---Introduction-to-sta)
+  - [2.1. Introduction to STA](#21-introduction-to-STA)
   - [2.2. Hierarchial synthesis vs Flat synthesis](#22-hierarchial-synthesis-vs-flat-synthesis)
   - [2.3. Various Flop Coding Styles and optimization](#23-various-flop-coding-styles-and-optimization)
 - [3. Day 3 - Combinational and Sequential Optimizations](#3-day-3---combinational-and-sequential-optimizations)
@@ -142,6 +142,9 @@ A Constraint is a guidance file given to a synthesizer inorder to enable an opti
 
 ## 2. Day 2 - Basics of STA
 ### 2.1. Introduction to STA
+Static timing analysis (STA) is a method of validating the timing performance of a design by checking all possible paths for timing violations. STA breaks a design down into timing paths, calculates the signal propagation delay along each path, and checks for violations of timing constraints inside the design and at the input/output interface.
+![image](https://user-images.githubusercontent.com/55539862/175761772-7a7ab402-6495-4f4d-959e-f009dbdca220.png)
+
 ```
 __Command to open the libary file
 $ gvim ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
