@@ -9,7 +9,7 @@
 - [Introduction](#-introduction)
 - [1. Day 1 - Introduction to Logic Synthesis](#1-day-1---introduction-to-logic-synthesis)
   - [1.1. Introduction to DC](#11-introduction-to-DC)
-  - [1.2. Invoking dc Basic setup](invoking-dc-basic-setup)
+  - [1.2. Invoking dc Basic setup](#invoking-dc-basic-setup)
   - [1.3. Introduction to ddc gui with Design vision](#13-Introdution-to-ddc-gui-with-design_vision)
   - [1.4. Labs using DC Synopsys DC Setup](#14-dc-synopsys-dc-setup)
   - [1.5 TCL Scripting](#15-tcl-scripting)
