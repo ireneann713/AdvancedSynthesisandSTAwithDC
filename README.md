@@ -19,7 +19,7 @@
    - [2.3. Exploring dotLib](#23-various-flop-coding-styles-and-optimization)
 - [3. Day 3 - Advanced Constraints](#3-day-3---advanced-constraints)
   - [3.1. Clock Tree Modelling - Uncertainty](#31-clock-tree-modelling---uncertainty)
-  - [3.2. Combinational logic Optimizations](#32-combinational-logic-optimizations)
+  - [3.2. Loading design get_cells, get_ports, get_nets](#32-loading-design-get_cells-get_ports-get_nets)
   - [3.3. Sequential logic Optimizations](#33-sequential-logic-optimizations)
 - [4. Day 4 - GLS, blocking vs non-blocking and Synthesis-Simulation mismatch](#4-day-4---GLS,-blocking-vs-non-blocking-and-Synthesis-Simulation-mismatch)
   - [4.1. GLS, Synthesis-Simulation mismatch and Blocking/Non-blocking statements](#41-GLS,-Synthesis-Simulation-mismatch-and-Blocking/Non-blocking-statements)
@@ -179,7 +179,7 @@ It can define for both setup and hold.
 
 ![image](https://user-images.githubusercontent.com/55539862/175766016-26ebf238-999b-4ae1-a55a-2ddbe158e7b5.png)
 
-### Loading design get_cells, get_ports, get_nets
+### 3.2 Loading design get_cells, get_ports, get_nets
 
 ![image](https://user-images.githubusercontent.com/55539862/175768690-3564622e-68d2-46e4-8621-f2ec4d502339.png)
 
