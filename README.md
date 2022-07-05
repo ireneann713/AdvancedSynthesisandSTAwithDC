@@ -1,4 +1,4 @@
-# AdvancedSynthesisandSTCwithDC
+# AdvancedSynthesisandSTAwithDC
 
 
 
@@ -79,9 +79,8 @@ $ git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
 ![image](https://user-images.githubusercontent.com/55539862/175649128-efb97bae-bb6e-4269-a2f7-20fab63d511c.png)
 
 
-![image](https://user-images.githubusercontent.com/55539862/175650960-523b2ba9-51da-4d0d-b9a3-0c143f677a9d.png)
 
-![image](https://user-images.githubusercontent.com/55539862/175654780-5051236c-ccab-442b-a79d-bdbd13b0f096.png)
+![image](https://user-images.githubusercontent.com/55539862/177386077-ebdd87e2-e360-40b3-94dd-0c677e07e198.png)
 
 
 #### Access Module Files
@@ -116,7 +115,7 @@ Inorder to charge/discharge the capacitance faster, we use wider transistors tha
 A Constraint is a guidance file given to a synthesizer inorder to enable an optimum implementation of the logic circuit by selecting the appropriate flavour of cells (fast or slow).
 
 ### 1.4. Labs using DC Synopsys DC Setup
-![image](https://user-images.githubusercontent.com/55539862/175760281-4092c6f6-814e-4d7f-a0a5-323c926384bf.png)
+![image](https://user-images.githubusercontent.com/55539862/177386518-d49a44b7-9d77-4ad0-9aff-d4c0fb6217c9.png)
 ![image](https://user-images.githubusercontent.com/55539862/175760776-17ddb649-2aa8-4944-882b-75ee9e61b796.png)
 
 
@@ -177,6 +176,9 @@ It can define for both setup and hold.
  #### get_pins
  
  ![image](https://user-images.githubusercontent.com/55539862/175775642-ec759034-54f0-4de9-b68c-1b01fb1b8935.png)
+ 
+ ### querying_clocks
+![image](https://user-images.githubusercontent.com/55539862/177390652-a82580e3-e330-469e-a8b3-f2a1458485b6.png)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
