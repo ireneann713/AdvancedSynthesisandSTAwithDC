@@ -20,7 +20,7 @@
 - [3. Day 3 - Advanced Constraints](#3-day-3---advanced-constraints)
   - [3.1. Clock Tree Modelling - Uncertainty](#31-clock-tree-modelling---uncertainty)
   - [3.2. Loading Design get_cells, get_ports, get_nets](#32-loading-design-get_cells-get_ports-get_nets)
-  - [3.3. Loading Design get_pins, get_clocks, querying_clocks]()
+  - [3.3. Loading Design get_pins, get_clocks, querying_clocks](#33--loading-design-get_pins-get_clocks-querying_clocks)
 # Introduction
 Design Compiler is an Advanced Synthesis Tool used by leading semiconductor companies across world.
 
