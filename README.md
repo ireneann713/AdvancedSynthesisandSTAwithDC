@@ -21,6 +21,7 @@
   - [3.1. Clock Tree Modelling - Uncertainty](#31-clock-tree-modelling---uncertainty)
   - [3.2. Loading Design get_cells, get_ports, get_nets](#32-loading-design-get_cells-get_ports-get_nets)
   - [3.3. Loading Design get_pins, get_clocks, querying_clocks](#33--loading-design-get_pins-get_clocks-querying_clocks)
+  - [3.4 Creating Clock Waveforms]()
 # Introduction
 Design Compiler is an Advanced Synthesis Tool used by leading semiconductor companies across world.
 
@@ -173,12 +174,21 @@ It can define for both setup and hold.
  
  ### 3.3  Loading Design get_pins, get_clocks, querying_clocks
  
- #### get_pins
+ ### #get_pins
  
  ![image](https://user-images.githubusercontent.com/55539862/175775642-ec759034-54f0-4de9-b68c-1b01fb1b8935.png)
  
- ### querying_clocks
+ #### querying_clocks
 ![image](https://user-images.githubusercontent.com/55539862/177390652-a82580e3-e330-469e-a8b3-f2a1458485b6.png)
+
+### 3.4 Creating Clock Waveforms
+
+![image](https://user-images.githubusercontent.com/55539862/177392240-b064a88a-e3f6-4908-ac21-45ba27cd0b63.png)
+
+#### 25% Duty cycle Clock
+![image](https://user-images.githubusercontent.com/55539862/177393409-4959d5a5-92fd-4d84-b792-0af91e870a83.png)
+
+
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
