@@ -25,7 +25,7 @@
   - [3.5 Clock Network Modelling - Uncertainty, report_timing](#35-clock-network-modelling---uncertainty-report_timing)
   -  [3.6 IO Delays](#36-io-delays)
   -  [3.7 SDC  generated_clk](#37-sdc--generated_clk)
-  -  [3.8 SDC  vclk, max_latency, rise_fall IODelays]()
+  -  [3.8 SDC  vclk, max_latency, rise_fall IODelays](#38-sdc--vclk-max_latency-rise_fall-iodelays)
   -  
 # Introduction
 Design Compiler is an Advanced Synthesis Tool used by leading semiconductor companies across world.
@@ -283,6 +283,8 @@ $report_clocks *
 
 #### - Virtual clock - purpose and timing
 A virtual clock is used as a reference to constrain the interface pins by relating the arrivals at input/output ports with respect to it with the help of input and output delays.
+![image](https://user-images.githubusercontent.com/55539862/177493447-df6fbcb2-7fe7-48e3-9f6b-a55004eeb7ca.png)
+
 
 ```
 $ create_clock –name VCLK –period 10
