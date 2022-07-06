@@ -272,6 +272,9 @@ $report_clocks *
 ```
 ![image](https://user-images.githubusercontent.com/55539862/177486649-850d9256-73c9-45e7-ac87-7832a1098ca0.png)
 
+![image](https://user-images.githubusercontent.com/55539862/177492430-650443f3-546e-4c04-a9fd-08a132ec21eb.png)
+
+![image](https://user-images.githubusercontent.com/55539862/177492559-28a3b370-e311-4d9a-b596-f1047431d5ce.png)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
