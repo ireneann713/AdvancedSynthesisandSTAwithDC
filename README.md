@@ -219,6 +219,13 @@ $report_port -verbose
 ```
 ![image](https://user-images.githubusercontent.com/55539862/177478803-51ac0cd8-1d82-485f-abf6-871e5900d21f.png)
 
+```
+$ set_input_delay -min 1 -clock [get_clocks myclk] [get_ports IN_A]
+$set_input_delay -min 1 -clock [get_clocks myclk] [get_ports IN_B]
+$report_port -verbose
+
+```
+![image](https://user-images.githubusercontent.com/55539862/177480559-20f6aa9d-b9d5-45bd-a02a-b375d8095818.png)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
