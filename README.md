@@ -23,6 +23,7 @@
   - [3.3. Loading Design get_pins, get_clocks, querying_clocks](#33--loading-design-get_pins-get_clocks-querying_clocks)
   - [3.4 Creating Clock Waveforms](#34-creating-clock-waveforms)
   - [3.5 Clock Network Modelling - Uncertainty, report_timing](#35-clock-network-modelling---uncertainty-report_timing)
+  -  [3.6 IO Delays](#36-io-delays)
 # Introduction
 Design Compiler is an Advanced Synthesis Tool used by leading semiconductor companies across world.
 
@@ -206,6 +207,18 @@ $ report_timing -to REGC_reg/D -delay max
 
 ```
 ![image](https://user-images.githubusercontent.com/55539862/177476692-33a64f3f-e84f-4b86-83f9-4365d1c4b98f.png)
+
+
+### 3.6 IO Delays
+
+```
+$ set_input_delay -max 5 -clock [get_clocks myclk] [get_ports IN_A]
+$set_input_delay -max 5 -clock [get_clocks myclk] [get_ports IN_B]
+$report_port -verbose
+
+```
+![image](https://user-images.githubusercontent.com/55539862/177478803-51ac0cd8-1d82-485f-abf6-871e5900d21f.png)
+
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
