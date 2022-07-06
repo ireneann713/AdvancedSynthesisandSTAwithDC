@@ -227,6 +227,14 @@ $report_timing -from IN_A -trans -nosplit
 ```
 ![image](https://user-images.githubusercontent.com/55539862/177480559-20f6aa9d-b9d5-45bd-a02a-b375d8095818.png)
 
+```
+$ set_input_delay -max 5 -clock [get_clocks myclk] [get_ports OUT_Y]
+$set_input_delay -min 1 -clock [get_clocks myclk] [get_ports OUT_Y]
+$report_timing -from OUT_Y -trans -nosplit
+
+```
+![image](https://user-images.githubusercontent.com/55539862/177481519-af9be744-1038-46c2-83c8-d81ca9380035.png)
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## ACKNOWLEDGEMENTS
