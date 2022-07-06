@@ -234,6 +234,15 @@ $report_timing -from OUT_Y -trans -nosplit
 
 ```
 ![image](https://user-images.githubusercontent.com/55539862/177481519-af9be744-1038-46c2-83c8-d81ca9380035.png)
+```
+$ set_load -max 0.4 [get_ports OUT_Y]
+
+$report_timing -to OUT_Y -cap -trans -nosplit
+
+```
+
+
+![image](https://user-images.githubusercontent.com/55539862/177482184-fd893cb8-e8e5-4c89-8241-4f8509f1a44f.png)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
