@@ -259,7 +259,7 @@ $report_timing -to OUT_Y -cap -trans -nosplit -delay min
 $ create_generated_clock -source reference_pin [-divide_by divide_factor] [-multiply_by multiply_factor] [-invert] source
 
 ```
-![download (6)](https://user-images.githubusercontent.com/55539862/177484644-c58a60bd-1245-402d-bf63-79fad43de147.png)
+![image](https://user-images.githubusercontent.com/55539862/177484874-a14a1b77-ae5d-4d1b-bb5e-04108a4dcc79.png)
 
 Creates a generated clock in the current design at a declared source by defining its frequency with respect to the frequency at the reference pin. The static timing analysis tool uses this information to compute and propagate its waveform across the clock network to the clock pins of all sequential elements driven by this source. 
 
