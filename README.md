@@ -13,7 +13,7 @@
   - [1.3. Introduction to ddc gui with Design vision](#13-introduction-to-ddc-gui-with-design-vision)
   - [1.4. Labs using DC Synopsys DC Setup](#14-labs-using-dc-synopsys-dc-setup)
   - [1.5 TCL Scripting](#15-tcl-scripting)
- - [2. Day 2 -  Basics to STA](#2-day-2---Introduction-to-sta)
+ - [2. Day 2 -  Basics to STA](#2-day-2---basics-of-sta)
    - [2.1. Introduction to STA](#21-introduction-to-sta)
    - [2.2. Timing dot Libs](#22-timing-dot-libs)
    - [2.3. Exploring dotLib](#23-various-flop-coding-styles-and-optimization)
@@ -21,7 +21,8 @@
   - [3.1. Clock Tree Modelling - Uncertainty](#31-clock-tree-modelling---uncertainty)
   - [3.2. Loading Design get_cells, get_ports, get_nets](#32-loading-design-get_cells-get_ports-get_nets)
   - [3.3. Loading Design get_pins, get_clocks, querying_clocks](#33--loading-design-get_pins-get_clocks-querying_clocks)
-  - [3.4 Creating Clock Waveforms]()
+  - [3.4 Creating Clock Waveforms](#34-creating-clock-waveforms)
+  - [3.5 Clock Network Modelling - Uncertainty, report_timing](#35-clock-network-modelling---uncertainty-report_timing)
 # Introduction
 Design Compiler is an Advanced Synthesis Tool used by leading semiconductor companies across world.
 
