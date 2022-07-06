@@ -24,6 +24,7 @@
   - [3.4 Creating Clock Waveforms](#34-creating-clock-waveforms)
   - [3.5 Clock Network Modelling - Uncertainty, report_timing](#35-clock-network-modelling---uncertainty-report_timing)
   -  [3.6 IO Delays](#36-io-delays)
+  -  [3.7 SDC  generated_clk](#37-sdc--generated_clk)
 # Introduction
 Design Compiler is an Advanced Synthesis Tool used by leading semiconductor companies across world.
 
@@ -252,6 +253,16 @@ $report_timing -to OUT_Y -cap -trans -nosplit -delay min
 ```
 
 ![image](https://user-images.githubusercontent.com/55539862/177482935-58140255-d013-45ee-90df-8d7096bfa933.png)
+
+### 3.7 SDC  generated_clk
+```
+$ create_generated_clock -source reference_pin [-divide_by divide_factor] [-multiply_by multiply_factor] [-invert] source
+
+```
+
+Creates a generated clock in the current design at a declared source by defining its frequency with respect to the frequency at the reference pin. The static timing analysis tool uses this information to compute and propagate its waveform across the clock network to the clock pins of all sequential elements driven by this source. 
+
+The generated clock information is also used to compute the slacks in the specified clock domain that drive optimization tools such as place-and-route.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
