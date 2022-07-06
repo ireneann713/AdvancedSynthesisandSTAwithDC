@@ -244,6 +244,15 @@ $report_timing -to OUT_Y -cap -trans -nosplit
 
 ![image](https://user-images.githubusercontent.com/55539862/177482184-fd893cb8-e8e5-4c89-8241-4f8509f1a44f.png)
 
+```
+$ set_load -min 0.1 [get_ports OUT_Y]
+
+$report_timing -to OUT_Y -cap -trans -nosplit -delay min
+
+```
+
+![image](https://user-images.githubusercontent.com/55539862/177482935-58140255-d013-45ee-90df-8d7096bfa933.png)
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## ACKNOWLEDGEMENTS
