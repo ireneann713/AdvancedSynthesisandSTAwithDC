@@ -222,7 +222,7 @@ $report_port -verbose
 ```
 $ set_input_delay -min 1 -clock [get_clocks myclk] [get_ports IN_A]
 $set_input_delay -min 1 -clock [get_clocks myclk] [get_ports IN_B]
-$report_port -verbose
+$report_timing -from IN_A -trans -nosplit
 
 ```
 ![image](https://user-images.githubusercontent.com/55539862/177480559-20f6aa9d-b9d5-45bd-a02a-b375d8095818.png)
