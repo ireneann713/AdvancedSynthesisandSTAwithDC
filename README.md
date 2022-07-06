@@ -265,6 +265,14 @@ Creates a generated clock in the current design at a declared source by defining
 
 The generated clock information is also used to compute the slacks in the specified clock domain that drive optimization tools such as place-and-route.
 
+```
+$ create_generated_clock -name MYGEN_CLK -master myclk -source [get_ports clk] -div 1 [get_ports out_clk]
+$report_clocks *
+
+```
+![image](https://user-images.githubusercontent.com/55539862/177486649-850d9256-73c9-45e7-ac87-7832a1098ca0.png)
+
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
