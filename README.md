@@ -188,7 +188,23 @@ It can define for both setup and hold.
 #### 25% Duty cycle Clock
 ![image](https://user-images.githubusercontent.com/55539862/177393409-4959d5a5-92fd-4d84-b792-0af91e870a83.png)
 
+### 3.5 Clock Network Modelling - Uncertainty, report_timing
 
+![image](https://user-images.githubusercontent.com/55539862/177475503-1c1c715f-4871-4fad-9d7d-c7ea7cbed09d.png)
+
+
+![image](https://user-images.githubusercontent.com/55539862/177475340-cf038439-bd0a-4d6d-a1a1-82cfb2ffc83c.png)
+```
+$  report_timing -to REGC_reg/D -delay min
+
+```
+![image](https://user-images.githubusercontent.com/55539862/177477065-1d8261ac-5fc6-4775-b5bf-ccb846aab54f.png)
+
+```
+$ report_timing -to REGC_reg/D -delay max
+
+```
+![image](https://user-images.githubusercontent.com/55539862/177476692-33a64f3f-e84f-4b86-83f9-4365d1c4b98f.png)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
