@@ -299,6 +299,14 @@ It specifies the drive characteristics of input or inout ports that are driven b
 
 ![image](https://user-images.githubusercontent.com/55539862/177723514-8993da75-91e6-4848-8398-0d87c164ee32.png)
 
+- VCLK
+```
+$ create_clock -name MYCLK -per 10
+```
+![image](https://user-images.githubusercontent.com/55539862/177740212-dd76b3a6-3952-49c9-bcbc-20b421cb6742.png)
+
+![image](https://user-images.githubusercontent.com/55539862/177740101-bc6ae068-a8f9-433a-8fd0-2b2253f29f88.png)
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
