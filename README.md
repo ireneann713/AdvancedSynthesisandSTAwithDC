@@ -314,13 +314,32 @@ $ create_clock -name MYCLK -per 10
 ## Day 4 - Optimizations
 
   ### 4.1 Combinational  Optimizations
-  In terms of Boolean algebra, the optimization of a complex boolean expression is a process of finding a simpler one, which would upon evaluation ultimately produce the same results as the original one.
+The combinational optimization phase transforms the logic-level description of the
+combinational logic to a gate-level netlist.
+Combinational optimization includes
+- Technology-Independent Optimization
+This optimization operates at the logic level. Design Compiler represents the gates as a
+set of Boolean logic equations.
+- Mapping
+During this process, Design Compiler selects components from the logic library to implement the logic structure.
+- Technology-Specific Optimization
+This optimization operates at the gate level.
   
+  ![image](https://user-images.githubusercontent.com/55539862/177751853-221a5598-934b-416e-b49b-6d7051275603.png)
+
   ![image](https://user-images.githubusercontent.com/55539862/177748680-7cdec838-3469-44ce-b650-6fa1480bebfb.png)
 
        
   ### 4.2 Sequential  Optimizations
   
+   Sequential optimization includes the initial optimization phase, which maps sequential cells
+to cells in the library, and the final optimization phase, where Design Compiler optimizes
+timing-critical sequential cells (cells on the critical path):
+- Initial Sequential Optimization
+- Final Sequential Optimization
+- 
+  ![image](https://user-images.githubusercontent.com/55539862/177751439-8270e1cd-1133-4b24-84ed-86ae7667bdb0.png)
+
   
 ## ACKNOWLEDGEMENTS
 
