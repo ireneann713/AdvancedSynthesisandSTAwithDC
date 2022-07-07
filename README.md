@@ -363,9 +363,20 @@ timing-critical sequential cells (cells on the critical path):
  
  ### 4.7 Isolating output ports
  
+ ![image](https://user-images.githubusercontent.com/55539862/177844399-c37c628c-e86e-4b79-b3d1-3b52e10238fb.png)
+![image](https://user-images.githubusercontent.com/55539862/177849079-957b1222-4c60-4660-8132-ef7d8f459409.png)
+
  
  ### 4.8 Multicycle Paths
  
+ ```
+ $set_multicycle_path -setup 2 -to prod_reg[*]/D -from [all_inputs]
+
+ $set_multicycle_path -hold 1 -to prod_reg[*]/D -from [all_inputs]
+ 
+ ```
+ ![image](https://user-images.githubusercontent.com/55539862/177851690-0f65dcc4-ac1a-4f6e-b1b9-22302becd13a.png)
+
  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## ACKNOWLEDGEMENTS
 
