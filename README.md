@@ -339,6 +339,7 @@ timing-critical sequential cells (cells on the critical path):
 - Final Sequential Optimization
 - 
   ![image](https://user-images.githubusercontent.com/55539862/177751439-8270e1cd-1133-4b24-84ed-86ae7667bdb0.png)
+![image](https://user-images.githubusercontent.com/55539862/177834410-ffcb2792-92b7-4fe6-8051-6cbb51a1f1d3.png)
 
   
 ## ACKNOWLEDGEMENTS
