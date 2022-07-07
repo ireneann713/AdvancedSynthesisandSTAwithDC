@@ -378,6 +378,18 @@ timing-critical sequential cells (cells on the critical path):
  ![image](https://user-images.githubusercontent.com/55539862/177851690-0f65dcc4-ac1a-4f6e-b1b9-22302becd13a.png)
 
  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+## Day 5 - Quality Checks
+
+### Report timing
+
+
+### Check_timing, Check_design, Set_max_capacitance, HFN
+
+
+
+
+
 ## ACKNOWLEDGEMENTS
 
   * Kunal Ghosh, Co-Founder (VLSI SYSTEM DESIGN - VSD)
