@@ -290,6 +290,10 @@ A virtual clock is used as a reference to constrain the interface pins by relati
 $ create_clock –name VCLK –period 10
 
 ```
+
+#### Set driving cells
+It specifies the drive characteristics of input or inout ports that are driven by the cells in the technology library. These commands associate a library pin with input ports so that delay calculation can be accurately modelled.
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
