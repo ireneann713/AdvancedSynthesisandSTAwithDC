@@ -362,6 +362,11 @@ timing-critical sequential cells (cells on the critical path):
 
  
  ### 4.7 Isolating output ports
+ 
+ 
+ ### 4.8 Multicycle Paths
+ 
+ -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## ACKNOWLEDGEMENTS
 
   * Kunal Ghosh, Co-Founder (VLSI SYSTEM DESIGN - VSD)
