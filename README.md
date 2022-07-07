@@ -29,6 +29,11 @@
 - [4.Day 4 - Optimizations](#day-4---optimizations)
   - [4.1 Combinational  Optimizations](#41-combinational--optimizations)
   - [4.2 Sequential  Optimizations]()
+  - [4.3 Special Optimizations]()
+  - [4.4 How Paths are timed MCP?]()
+  - [4.5 Boundary Optimization]()
+  - [4.6 Register Retiming]()
+  - 
 # Introduction
 Design Compiler is an Advanced Synthesis Tool used by leading semiconductor companies across world.
 
@@ -340,6 +345,20 @@ timing-critical sequential cells (cells on the critical path):
 - 
   ![image](https://user-images.githubusercontent.com/55539862/177751439-8270e1cd-1133-4b24-84ed-86ae7667bdb0.png)
 ![image](https://user-images.githubusercontent.com/55539862/177834410-ffcb2792-92b7-4fe6-8051-6cbb51a1f1d3.png)
+
+  ### 4.3 Special Optimizations
+  
+  ### 4.4 How Paths are timed MCP?
+  
+  ### 4.5 Boundary Optimization
+  ```
+  $ set_boundary_optimization u_im false
+  
+  ```
+  ![image](https://user-images.githubusercontent.com/55539862/177837375-e5670dbe-c0dd-4093-91e4-cdff5acb3ee6.png)
+  
+### 4.6 Register Retiming
+![image](https://user-images.githubusercontent.com/55539862/177840659-32fbc01d-0f0e-40e9-a976-de41ab282d53.png)
 
   
 ## ACKNOWLEDGEMENTS
