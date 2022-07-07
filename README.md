@@ -26,7 +26,9 @@
   -  [3.6 IO Delays](#36-io-delays)
   -  [3.7 SDC  generated_clk](#37-sdc--generated_clk)
   -  [3.8 SDC  vclk, max_latency, rise_fall IODelays](#38-sdc--vclk-max_latency-rise_fall-iodelays)
-  -  
+- [4.Day 4 - Optimizations](#day-4---optimizations)
+  - [4.1 Combinational  Optimizations](#41-combinational--optimizations)
+  - [4.2 Sequential  Optimizations]()
 # Introduction
 Design Compiler is an Advanced Synthesis Tool used by leading semiconductor companies across world.
 
@@ -309,7 +311,17 @@ $ create_clock -name MYCLK -per 10
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+## Day 4 - Optimizations
 
+  ### 4.1 Combinational  Optimizations
+  In terms of Boolean algebra, the optimization of a complex boolean expression is a process of finding a simpler one, which would upon evaluation ultimately produce the same results as the original one.
+  
+  ![image](https://user-images.githubusercontent.com/55539862/177748680-7cdec838-3469-44ce-b650-6fa1480bebfb.png)
+
+       
+  ### 4.2 Sequential  Optimizations
+  
+  
 ## ACKNOWLEDGEMENTS
 
   * Kunal Ghosh, Co-Founder (VLSI SYSTEM DESIGN - VSD)
