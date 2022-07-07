@@ -294,6 +294,11 @@ $ create_clock –name VCLK –period 10
 #### Set driving cells
 It specifies the drive characteristics of input or inout ports that are driven by the cells in the technology library. These commands associate a library pin with input ports so that delay calculation can be accurately modelled.
 
+
+![image](https://user-images.githubusercontent.com/55539862/177722339-3dae7b36-b199-4d69-b9d9-99202ec02d1f.png)
+
+![image](https://user-images.githubusercontent.com/55539862/177723514-8993da75-91e6-4848-8398-0d87c164ee32.png)
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
