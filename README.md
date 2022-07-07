@@ -360,7 +360,8 @@ timing-critical sequential cells (cells on the critical path):
 ### 4.6 Register Retiming
 ![image](https://user-images.githubusercontent.com/55539862/177840659-32fbc01d-0f0e-40e9-a976-de41ab282d53.png)
 
-  
+ 
+ ### 4.7 Isolating output ports
 ## ACKNOWLEDGEMENTS
 
   * Kunal Ghosh, Co-Founder (VLSI SYSTEM DESIGN - VSD)
