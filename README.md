@@ -32,10 +32,9 @@
   - [4.3 Boundary Optimization]()
   - [4.4 Register Retiming]()
 
-
 - [5. Day 5 - Quality Checks]()
- - [ 5.1 Report timing]()
- - [5.2 Lab Check_timing, Check_design, Set_max_capacitance, HFN]()
+  - [ 5.1 Report timing]()
+  - [5.2 Lab Check_timing, Check_design, Set_max_capacitance, HFN]()
  
 
 
