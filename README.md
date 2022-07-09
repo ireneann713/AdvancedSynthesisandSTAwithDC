@@ -29,11 +29,16 @@
 - [4.Day 4 - Optimizations](#day-4---optimizations)
   - [4.1 Combinational  Optimizations](#41-combinational--optimizations)
   - [4.2 Sequential  Optimizations]()
-  - [4.3 Special Optimizations]()
-  - [4.4 How Paths are timed MCP?]()
-  - [4.5 Boundary Optimization]()
-  - [4.6 Register Retiming]()
-  - 
+  - [4.3 Boundary Optimization]()
+  - [4.4 Register Retiming]()
+
+
+- [5. Day 5 - Quality Checks]()
+ - [ 5.1 Report timing]()
+ - [5.2 Lab Check_timing, Check_design, Set_max_capacitance, HFN]()
+ 
+
+
 # Introduction
 Design Compiler is an Advanced Synthesis Tool used by leading semiconductor companies across world.
 
@@ -346,28 +351,26 @@ timing-critical sequential cells (cells on the critical path):
   ![image](https://user-images.githubusercontent.com/55539862/177751439-8270e1cd-1133-4b24-84ed-86ae7667bdb0.png)
 ![image](https://user-images.githubusercontent.com/55539862/177834410-ffcb2792-92b7-4fe6-8051-6cbb51a1f1d3.png)
 
-  ### 4.3 Special Optimizations
+ 
   
-  ### 4.4 How Paths are timed MCP?
-  
-  ### 4.5 Boundary Optimization
+  ### 4.3 Boundary Optimization
   ```
   $ set_boundary_optimization u_im false
   
   ```
   ![image](https://user-images.githubusercontent.com/55539862/177837375-e5670dbe-c0dd-4093-91e4-cdff5acb3ee6.png)
   
-### 4.6 Register Retiming
+### 4.4 Register Retiming
 ![image](https://user-images.githubusercontent.com/55539862/177840659-32fbc01d-0f0e-40e9-a976-de41ab282d53.png)
 
  
- ### 4.7 Isolating output ports
+ ### 4.5 Isolating output ports
  
  ![image](https://user-images.githubusercontent.com/55539862/177844399-c37c628c-e86e-4b79-b3d1-3b52e10238fb.png)
 ![image](https://user-images.githubusercontent.com/55539862/177849079-957b1222-4c60-4660-8132-ef7d8f459409.png)
 
  
- ### 4.8 Multicycle Paths
+ ### 4.6 Multicycle Paths
  
  ```
  $set_multicycle_path -setup 2 -to prod_reg[*]/D -from [all_inputs]
@@ -382,9 +385,17 @@ timing-critical sequential cells (cells on the critical path):
 ## Day 5 - Quality Checks
 
 ### Report timing
+![image](https://user-images.githubusercontent.com/55539862/178103719-94d643b9-1942-40b9-bd47-cd402cbd3245.png)
+![image](https://user-images.githubusercontent.com/55539862/178105529-5e986d43-9747-4e70-b949-f203a9b97133.png)
 
 
 ### Check_timing, Check_design, Set_max_capacitance, HFN
+
+![image](https://user-images.githubusercontent.com/55539862/178107936-d236bf53-d476-4e5a-b36d-22fb53279ed5.png)
+
+![image](https://user-images.githubusercontent.com/55539862/178107377-49df4a56-e400-48c2-8364-3fa978df0ea2.png)
+
+
 
 
 
