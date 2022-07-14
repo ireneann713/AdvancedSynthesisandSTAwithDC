@@ -156,14 +156,11 @@ Static timing analysis (STA) is a method of validating the timing performance of
 
 
 ### 2.2. Timing dot Libs
-![image](https://user-images.githubusercontent.com/55539862/175762586-57be47d9-c7de-4ed0-8a22-03281a84769d.png)
+![image](https://user-images.githubusercontent.com/55539862/178947578-711e234d-2e38-4004-b5cd-cf15ebd63a3d.png)
 
-### 2.3. Exploring Exploring dotLib 
-![image](https://user-images.githubusercontent.com/55539862/175762887-a75aad9b-46b1-49c1-ba12-44948eefc10a.png)
+### 2.3. Exploring  dotLib 
 
-![image](https://user-images.githubusercontent.com/55539862/175765808-18b21585-ccd8-441c-9a9f-8a8202e6d816.png)
-
-![image](https://user-images.githubusercontent.com/55539862/175765782-c2b70c26-4c6e-413b-96fd-3be0e8575d3f.png)
+![image](https://user-images.githubusercontent.com/55539862/178948324-4b3e0f91-2146-4aeb-b322-a7dad1fb6d6c.png)
 
 
 
@@ -383,21 +380,48 @@ timing-critical sequential cells (cells on the critical path):
  
 ## Day 5 - Quality Checks
 
+To start the Physical design  these are the files we get input from Synthesis Team.
+- Netlist,
+- SDC.
+
+After receiving database from synthesis team and prior to place and route you can perform some sanity checks. To validate the quality of constraints read in the netlist and the sdc file in the primetime and perform check_timing and generate report which will giving inputs like the quality of database like
+how many of the flip flops are getting clocks, 
+how many flops are constrained,
+how many ports are having constrained or whether there is any violation like that which will surely give some idea about the quality of the delivered database.
+
+In order to understand the quality of the database interms of timing , generate timing reports and understand the quality of timing how good or how bad is the database and how much you can optimize at the backend or at the placement and routing stages or what paths you cannot meet timing even during placement stages
+
+After analysing bit on the timing reports you can get some idea of what all areas you need to close pack during placement so that you can create regions.
+
+Generate report_area and report_references -hier report in the designcompiler or synthesis stage to better understand the design hierarchy.
+
+
 ### Report timing
+
+The Report Timing command allows you to specify options for reporting the timing on any path or clock domain in the design.
+
 ![image](https://user-images.githubusercontent.com/55539862/178103719-94d643b9-1942-40b9-bd47-cd402cbd3245.png)
 ![image](https://user-images.githubusercontent.com/55539862/178105529-5e986d43-9747-4e70-b949-f203a9b97133.png)
 
 
 ### Check_timing, Check_design, Set_max_capacitance, HFN
 
+#### *check_timing*
+Checks the assertions and structure of the design for potential   timing violations.This   command is used to identify possible problems before generating timing or constraint reports. This command also prints which checks it performs. If a check reveals a violation,   the   command   also prints a message about the violation. By default, the message contains a summary of the violation. To   get   more information about violations, use the -verbose option.
+
+#### *Check_design*
+
+ check_design checks the current design for consistency. The check_design command checks the internal representation of the current design for consistency, and issues error and warning messages as appropriate. 
+
+#### *Set_max_capacitance*
+Specifies a maximum capacitance on pins, ports or   design.   If   maximum capacitance   is   set on a pin or port, the net connected to that pin or
+ port is expected to have a total capacitance less   than   the   specified  capacitance_value. If specified on a design, the default maximum capacitance for that design is set.   Library   cell   pins   also   can   have  max_capacitance value specified.
+
+#### *HFN*
+
 ![image](https://user-images.githubusercontent.com/55539862/178107936-d236bf53-d476-4e5a-b36d-22fb53279ed5.png)
 
 ![image](https://user-images.githubusercontent.com/55539862/178107377-49df4a56-e400-48c2-8364-3fa978df0ea2.png)
-
-
-
-
-
 
 
 ## ACKNOWLEDGEMENTS
