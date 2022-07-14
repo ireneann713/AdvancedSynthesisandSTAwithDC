@@ -28,13 +28,15 @@
   -  [3.8 SDC  vclk, max_latency, rise_fall IODelays](#38-sdc--vclk-max_latency-rise_fall-iodelays)
 - [4.Day 4 - Optimizations](#day-4---optimizations)
   - [4.1 Combinational  Optimizations](#41-combinational--optimizations)
-  - [4.2 Sequential  Optimizations]()
-  - [4.3 Boundary Optimization]()
-  - [4.4 Register Retiming]()
+  - [4.2 Sequential  Optimizations](#42-sequential--optimizations)
+  - [4.3 Boundary Optimization](#43-boundary-optimization)
+  - [4.4 Register Retiming](#44-register-retiming)
+  - [4.5 Isolating output ports](#45-isolating-output-ports)
+  - [4.6 Multicycle Paths](#46-multicycle-paths)
 
-- [5. Day 5 - Quality Checks]()
-  - [ 5.1 Report timing]()
-  - [5.2 Lab Check_timing, Check_design, Set_max_capacitance, HFN]()
+- [5. Day 5 - Quality Checks](#day-5---quality-checks)
+  - [ 5.1 Report timing](#report-timing)
+  - [5.2 Lab Check_timing, Check_design, Set_max_capacitance, HFN](#check_timing-check_design-set_max_capacitance-hfn)
  
 
 
@@ -351,7 +353,7 @@ timing-critical sequential cells (cells on the critical path):
   
   ### 4.3 Boundary Optimization
   
-  Boundary optimization results fastest critical paths and smallest design.
+   Boundary optimization results fastest critical paths and smallest design.
 
 Basically four optimizations collectively called as Boundary optimization in synthesis (wrto DC).
 a) Inversion pushing across hierarchy.
