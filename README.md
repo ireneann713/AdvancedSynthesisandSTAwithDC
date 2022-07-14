@@ -436,6 +436,13 @@ Specifies a maximum capacitance on pins, ports or   design.   If   maximum capac
 
 ![image](https://user-images.githubusercontent.com/55539862/178107377-49df4a56-e400-48c2-8364-3fa978df0ea2.png)
 
+## FUNCTIONAL SIMULATION
+
+A functional simulation simulates the design description to verify its logical correctness. A circuit represented in the form of logic expressions can be simulated to verify that it will function as expected. The tool that performs this task is called a functional simulator.
+
+![image](https://user-images.githubusercontent.com/55539862/178995072-9dab76bc-da90-49f3-bfed-7e5ff88f76eb.png)
+
+
 ## Simulation of VSDBABY SoC
 
 ![image](https://user-images.githubusercontent.com/55539862/178993878-de2acc6f-27ca-4bdd-92db-aceb0b396d2d.png)
