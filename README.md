@@ -350,6 +350,15 @@ timing-critical sequential cells (cells on the critical path):
  
   
   ### 4.3 Boundary Optimization
+  
+  Boundary optimization results fastest critical paths and smallest design.
+
+Basically four optimizations collectively called as Boundary optimization in synthesis (wrto DC).
+a) Inversion pushing across hierarchy.
+b)propagation of equal and opposite information
+c)propagation of unconnected /undriven ports.
+d) propagation of constants..
+
   ```
   $ set_boundary_optimization u_im false
   
@@ -357,6 +366,8 @@ timing-critical sequential cells (cells on the critical path):
   ![image](https://user-images.githubusercontent.com/55539862/177837375-e5670dbe-c0dd-4093-91e4-cdff5acb3ee6.png)
   
 ### 4.4 Register Retiming
+Register retiming is a circuit optimization technique that moves registers forward or backward across combinational elements in a circuit. The aim of this procedure is to shorten the clock cycle or reduce circuit area. There are two basic types of register retiming: Forward retiming and backward retiming.
+
 ![image](https://user-images.githubusercontent.com/55539862/177840659-32fbc01d-0f0e-40e9-a976-de41ab282d53.png)
 
  
@@ -367,6 +378,7 @@ timing-critical sequential cells (cells on the critical path):
 
  
  ### 4.6 Multicycle Paths
+ A Multi-Cycle Path (MCP) is a flop-to-flop path, where the combinational logic delay in between the flops is permissible to take more than one clock cycle. Sometimes timing paths with large delays are designed such that they are permitted multiple cycles to propagate from source to destination.
  
  ```
  $set_multicycle_path -setup 2 -to prod_reg[*]/D -from [all_inputs]
