@@ -7,17 +7,17 @@
 
 ## Table of Contents
 - [Introduction](#-introduction)
-- [1. Day 1 - Introduction to Logic Synthesis](#1-day-1---introduction-to-logic-synthesis)
+- [ Day 1 - Introduction to Logic Synthesis](#1-day-1---introduction-to-logic-synthesis)
   - [1.1. Introduction to DC](#11-introduction-to-dc)
   - [1.2. Invoking dc Basic setup](#invoking-dc-basic-setup)
   - [1.3. Introduction to ddc gui with Design vision](#13-introduction-to-ddc-gui-with-design-vision)
   - [1.4. Labs using DC Synopsys DC Setup](#14-labs-using-dc-synopsys-dc-setup)
   - [1.5 TCL Scripting](#15-tcl-scripting)
- - [2. Day 2 -  Basics to STA](#2-day-2---basics-of-sta)
+ - [ Day 2 -  Basics to STA](#2-day-2---basics-of-sta)
    - [2.1. Introduction to STA](#21-introduction-to-sta)
    - [2.2. Timing dot Libs](#22-timing-dot-libs)
    - [2.3. Exploring dotLib](#23-various-flop-coding-styles-and-optimization)
-- [3. Day 3 - Advanced Constraints](#3-day-3---advanced-constraints)
+- [ Day 3 - Advanced Constraints](#3-day-3---advanced-constraints)
   - [3.1. Clock Tree Modelling - Uncertainty](#31-clock-tree-modelling---uncertainty)
   - [3.2. Loading Design get_cells, get_ports, get_nets](#32-loading-design-get_cells-get_ports-get_nets)
   - [3.3. Loading Design get_pins, get_clocks, querying_clocks](#33--loading-design-get_pins-get_clocks-querying_clocks)
@@ -26,7 +26,7 @@
   -  [3.6 IO Delays](#36-io-delays)
   -  [3.7 SDC  generated_clk](#37-sdc--generated_clk)
   -  [3.8 SDC  vclk, max_latency, rise_fall IODelays](#38-sdc--vclk-max_latency-rise_fall-iodelays)
-- [4.Day 4 - Optimizations](#day-4---optimizations)
+- [ Day 4 - Optimizations](#day-4---optimizations)
   - [4.1 Combinational  Optimizations](#41-combinational--optimizations)
   - [4.2 Sequential  Optimizations](#42-sequential--optimizations)
   - [4.3 Boundary Optimization](#43-boundary-optimization)
@@ -34,10 +34,9 @@
   - [4.5 Isolating output ports](#45-isolating-output-ports)
   - [4.6 Multicycle Paths](#46-multicycle-paths)
 
-- [5. Day 5 - Quality Checks](#day-5---quality-checks)
+- [ Day 5 - Quality Checks](#day-5---quality-checks)
   - [ 5.1 Report timing](#report-timing)
   - [5.2 Lab Check_timing, Check_design, Set_max_capacitance, HFN](#check_timing-check_design-set_max_capacitance-hfn)
- 
 
 
 # Introduction
@@ -55,7 +54,7 @@ This workshop explores the following aspects,
 - Understanding and writing the Synopsys Design Constraints [SDC].
 - Analyzing the quality of netlist synthesized.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## 1. Day 1 - Introduction to Logic Synthesis
+##  Day 1 - Introduction to Logic Synthesis
 ### 1.1. Introduction to DC
 Design Compiler RTL synthesis solution enables users to meet today's design challenges with concurrent optimization of timing, area, power and test. Design Compiler includes innovative topographical technology that enables a predictable flow resulting in faster time to results.  
 
@@ -147,7 +146,7 @@ A Constraint is a guidance file given to a synthesizer inorder to enable an opti
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
-## 2. Day 2 - Basics of STA
+##  Day 2 - Basics of STA
 ### 2.1. Introduction to STA
 Static timing analysis (STA) is a method of validating the timing performance of a design by checking all possible paths for timing violations. STA breaks a design down into timing paths, calculates the signal propagation delay along each path, and checks for violations of timing constraints inside the design and at the input/output interface.
 ![image](https://user-images.githubusercontent.com/55539862/175761772-7a7ab402-6495-4f4d-959e-f009dbdca220.png)
@@ -169,7 +168,7 @@ Static timing analysis (STA) is a method of validating the timing performance of
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## 3. Day 3 - Advanced Constraints
+##  Day 3 - Advanced Constraints
 **Clock**
 A clock signal oscillates between a high and a low state and is used like a metronome to coordinate actions of digital circuits. A clock signal is produced by a clock generator.
 
